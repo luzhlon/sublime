@@ -1,0 +1,60 @@
+[
+	// Normal Mode
+	// Insert Mode
+	{"keys": ["alt+/"], "command": "auto_complete", "context": [
+		{"key": "setting.command_mode", "operand": false},
+		{"key": "setting.is_widget", "operand": false}]},
+	{"keys": ["ctrl+d"], "command": "right_delete", "context": [
+		{"key": "setting.command_mode", "operand": false},
+		{"key": "setting.is_widget", "operand": false}]},
+	{"keys": ["ctrl+c"], "command": "exit_insert_mode", "context": [
+		{ "key": "setting.command_mode", "operand": false },
+		{ "key": "setting.is_widget", "operand": false }]},
+	{"keys": ["alt+d"], "command": "delete_word", "context": [
+		{"key": "setting.command_mode", "operand": false},
+		{"key": "setting.is_widget", "operand": false}],
+		"args": { "forward": true }},
+	{"keys": ["alt+n"], "command": "move", "context": [
+		{"key": "setting.command_mode", "operand": false},
+		{"key": "setting.is_widget", "operand": false}],
+		"args": {"by": "lines", "forward": true}},
+	{"keys": ["alt+p"], "command": "move", "context": [
+		{"key": "setting.command_mode", "operand": false},
+		{"key": "setting.is_widget", "operand": false}],
+		"args": {"by": "lines", "forward": false}},
+	{"keys": ["ctrl+h"], "command": "left_delete", "context": [
+		{"key": "setting.command_mode", "operand": false},
+		{"key": "setting.is_widget", "operand": false}]},
+	{"keys": ["ctrl+b"], "command": "move", "context": [
+		{"key": "setting.command_mode", "operand": false},
+		{"key": "setting.is_widget", "operand": false}],
+		"args": {"by": "characters", "forward": false} },
+	{"keys": ["ctrl+w"], "command": "delete_word", "context": [
+		{"key": "setting.command_mode", "operand": false},
+		{"key": "setting.is_widget", "operand": false}],
+		"args": { "forward": false } },
+	{"keys": ["ctrl+f"], "command": "move", "context": [
+		{"key": "setting.command_mode", "operand": false},
+		{"key": "setting.is_widget", "operand": false}],
+		"args": {"by": "characters", "forward": true} },
+	{"keys": ["alt+b"], "command": "move", "context": [
+		{"key": "setting.command_mode", "operand": false},
+		{"key": "setting.is_widget", "operand": false}],
+		"args": {"by": "words", "forward": false} },
+	{"keys": ["alt+f"], "command": "move", "context": [
+		{"key": "setting.command_mode", "operand": false},
+		{"key": "setting.is_widget", "operand": false}],
+		"args": {"by": "word_ends", "forward": true} },
+	{"keys": ["ctrl+a"], "command": "move_to", "context": [
+		{"key": "setting.command_mode", "operand": false},
+		{"key": "setting.is_widget", "operand": false}],
+		"args": {"to": "bol", "extend": false} },
+	{"keys": ["ctrl+e"], "command": "move_to", "context": [
+		{"key": "setting.command_mode", "operand": false},
+		{"key": "setting.is_widget", "operand": false}],
+		"args": {"to": "eol", "extend": false}},
+	{"keys": ["ctrl+u"], "command": "move_to", "context": [
+		{"key": "setting.command_mode", "operand": false},
+		{"key": "setting.is_widget", "operand": false}],
+		"args": {"to": "bol", "extend": true}}
+]
