@@ -1,0 +1,4 @@
+[
+	{"caption": "Hello world", "command": "insert", "args": {"characters": "Hello world"}},
+	{"caption": "Run python file", "command": "run_file"}
+]
